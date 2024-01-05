@@ -1,38 +1,47 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.button-list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  flex: 0 0 calc(33.33% - 10px);
+  margin: 5px;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px; /* Butonları yuvarlatma */
+  background-color: #3498db; /* Arka plan rengi */
+  color: #fff; /* Metin rengi */
+  cursor: pointer; /* İmleç stilini değiştirme */
+  transition: background-color 0.3s, color 0.3s; /* Geçiş efekti */
+}
+
+button:hover {
+  background-color: #2980b9; /* Hover durumunda arka plan rengini değiştirme */
+}
+
+input {
+  font-size: 30px;
+  width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  border: solid 2px black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
 }
